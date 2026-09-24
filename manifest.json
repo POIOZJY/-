@@ -1,0 +1,11 @@
+{
+  "display_name": "回复控制",
+  "loading_order": 100,
+  "requires": [],
+  "js": "index.js",
+  "css": "style.css",
+  "author": "POIOZJY",
+  "version": "1.0.0",
+  "minimum_client_version": "1.18.0",
+  "homePage": "https://github.com/POIOZJY/-"
+}
