@@ -1,0 +1,40 @@
+#poiozjy-reply-control-toggle {
+    border: 0;
+    background: transparent;
+    color: var(--SmartThemeBodyColor, #ddd);
+    opacity: .8;
+    cursor: pointer;
+    font-size: 1.1em;
+    min-width: 2.1rem;
+    min-height: 2.1rem;
+    align-self: center;
+}
+#poiozjy-reply-control-toggle.rc-enabled {
+    opacity: 1;
+    color: var(--SmartThemeQuoteColor, #9bddac);
+    text-shadow: 0 0 .35rem currentColor;
+}
+#poiozjy-reply-control-toggle:focus-visible {
+    outline: 2px solid currentColor;
+    border-radius: .35rem;
+}
+.rc-quick-panel {
+    position: fixed;
+    z-index: 10010;
+    width: min(320px, calc(100vw - 16px));
+    max-height: min(75vh, 600px);
+    overflow-y: auto;
+    padding: .8rem;
+    border: 1px solid var(--SmartThemeBorderColor, #777);
+    border-radius: .65rem;
+    color: var(--SmartThemeBodyColor, #eee);
+    background: var(--SmartThemeBlurTintColor, #222);
+    box-shadow: 0 8px 24px #0009;
+}
+.rc-quick-heading { display: flex; justify-content: space-between; font-weight: bold; }
+.rc-quick-heading button { font-size: 1.4rem; background: transparent; color: inherit; border: 0; cursor: pointer; }
+.rc-form { display: grid; gap: .6rem; padding: .5rem; }
+.rc-form label:not(.rc-switch) { display: grid; gap: .2rem; }
+.rc-form select, .rc-form input[type="number"] { width: 100%; box-sizing: border-box; }
+.rc-form small { line-height: 1.4; opacity: .85; }
+.rc-collapsed { display: none; }
